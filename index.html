@@ -1,20 +1,20 @@
-<!DOCTYPE html>
 <html>
-<head>
-  <title>When the ai is sus</title>
-  <link rel="icon" href="favicon.ico" type="image/x-icon">
-</head>
-<body>
+  <body>
+    <!-- Add a placeholder for the Twitch embed -->
+    <div id="twitch-embed"></div>
 
-<h1>WHEN THE AI IS SUS</h1>
-<p>WTF XD</p>
-<img src="sus.jpg" alt="Sus">
-<img src="twerk.gif" alt="Sus">
-<audio controls autoplay>
-  <source src="audio.mp3" type="audio/mpeg">
-  Your browser does not support the audio element.
-</audio>
+    <!-- Load the Twitch embed JavaScript file -->
+    <script src="https://embed.twitch.tv/embed/v1.js"></script>
 
-</body>
+    <!-- Create a Twitch.Embed object that will render within the "twitch-embed" element -->
+    <script type="text/javascript">
+      new Twitch.Embed("twitch-embed", {
+        width: 854,
+        height: 480,
+        channel: "wiicontrollerpluz",
+        // Only needed if this page is going to be embedded on other websites
+        parent: ["embed.example.com", "othersite.example.com"]
+      });
+    </script>
+  </body>
 </html>
-
